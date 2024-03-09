@@ -66,7 +66,7 @@ body {
 }
 
 .hero-section img{
-    
-box-shadow: 0px 0px 100px 10px rgba(201,96,201,0.5);
+    box-shadow: 0px 0px 100px 10px rgba(201,96,201,0.5);
+    width: 70%;
 }
 /* hero section end  */
