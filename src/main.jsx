@@ -12,7 +12,7 @@ import Layout from "./layout/Layout.jsx";
 import Hero from "./pages/Hero.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
-import Skils from "./pages/Skils.jsx";
+import Skills from "./pages/Skills.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +20,7 @@ const router = createBrowserRouter(
       <Route path="" element={<Hero />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="skils" element={<Skils />} />
+      <Route path="skills" element={<Skills />} />
     </Route>
   )
 );

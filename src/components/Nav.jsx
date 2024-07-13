@@ -29,7 +29,6 @@ function Nav() {
             </li>
             <li>
               <NavLink
-                // className="mx-7 text-sm text-white font-semibold hover:text-indigo-400 transition-all "
                 className={({ isActive }) =>
                   `mx-7 hover:text-indigo-400 transition-all ${
                     isActive
@@ -51,12 +50,12 @@ function Nav() {
                       : "text-sm text-white font-semibold"
                   }`
                 }
-                to="/skils"
+                to="/skills"
               >
                 SKILLS
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 className={({ isActive }) =>
                   `mx-7 hover:text-indigo-400 transition-all ${
@@ -69,7 +68,7 @@ function Nav() {
               >
                 PROJECTS
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 className={({ isActive }) =>
