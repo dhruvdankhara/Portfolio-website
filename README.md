@@ -95,26 +95,26 @@ Portfolio-website/
 │   │   ├── Footer.jsx
 │   │   ├── Nav.jsx
 |   |   ├── SkillCard.jsx
-│   │   ├── Title.jsx
+│   │   └── Title.jsx
 │   ├── images/
-│   │   ├── images....
+│   │   └── images....
 │   ├── layout/
-│   │   ├── Layout.jsx
+│   │   └── Layout.jsx
 │   ├── pages/
 │   │   ├── About.jsx
 │   │   ├── Contact.jsx
 │   │   ├── Hero.jsx
-│   │   ├── Skills.jsx
+│   │   └── Skills.jsx
 │   ├── App.jsx
 │   ├── index.css
-│   ├── main.jsx
+│   └── main.jsx
 ├── .eslintrc.cjs
 ├── .gitignore
 ├── index.html
 ├── package-lock.json
 ├── package.json
 ├── postcss.config.js
-└── README.md
+├── README.md
 ├── tailwind.config.js
 ├── vite.config.js
 ```
