@@ -1,5 +1,3 @@
-import React from "react";
-
 function SkillCard({ imagePath, altText }) {
   return (
     <div className="bg-[#DFC1C1] bg-opacity-10 p-4 w-30 h-30 md:w-40 md:h-40 flex flex-col items-center justify-evenly rounded-lg">

@@ -22,7 +22,11 @@ function Skills() {
         <Title title="Tech Stack" />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 ">
           {languages.map((lang) => (
-            <SkillCard key={lang} imagePath={`./src/images/${lang}.svg`} />
+            <SkillCard
+              key={lang}
+              imagePath={`./src/images/${lang}.svg`}
+              altText={`${lang} logo.`}
+            />
           ))}
         </div>
       </div>
