@@ -16,7 +16,7 @@ function Hero() {
             </div>
             <div>
               <p className="my-7 text-3xl text-white md:text-4xl lg:text-5xl leading-normal font-bold">
-                MERN Developer
+                MERN Stack Developer
               </p>
             </div>
             <div>
