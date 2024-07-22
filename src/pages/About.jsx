@@ -29,13 +29,13 @@ function About() {
           </div>
           <div className="px-5 text-center md:text-left">
             <h4 className="text-2xl text-white font-bold">
-              Front-end & Python Developer <br />
+              MERN Stack Developer <br />
               based in Surat, India 📍
             </h4>
 
             <p className="text-white my-7 text-lg">
-              Hey, my name is Dhruv, and I am a Frontend & Python Developer. My
-              passion is to create and develope Website for my users. <br />
+              Hey, my name is Dhruv, and I am a MERN Stack Developer. My passion
+              is to create and develope Website for my users. <br />
               <br />I am currently learning DSA in Python and also learning
               React Js for web development.
             </p>
