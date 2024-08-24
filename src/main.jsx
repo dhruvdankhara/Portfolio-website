@@ -13,10 +13,11 @@ import Hero from "./pages/Hero.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Skills from "./pages/Skills.jsx";
+import App from "./App.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/" element={<App />}>
       <Route path="" element={<Hero />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
