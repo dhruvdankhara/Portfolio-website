@@ -1,22 +1,22 @@
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Project from "./components/Project";
-import TechStack from "./components/TechStack";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "@/pages/Index";
+import Blogs from "@/pages/Blogs";
+import BlogPost from "@/pages/BlogPost";
+import NotFound from "@/pages/NotFound";
+import HomeLayout from "@/Layout/HomeLayout";
 
 function App() {
   return (
-    <>
-      <div className="mx-auto max-w-7xl p-3 md:p-5">
-        <div className="flex flex-col md:gap-5">
-          <Navbar />
-          <Hero />
-          <TechStack />
-          <Project />
-          <Footer />
-        </div>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<HomeLayout />}>
+          <Route path="/" element={<Index />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:slug" element={<BlogPost />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

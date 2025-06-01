@@ -1,7 +1,9 @@
-import Card from "./Card";
-
-const Title = ({ title }: { title: string }) => {
-  return <Card className="text-2xl font-bold md:py-4">{title}</Card>;
+const Title = ({ text }: { text: string }) => {
+  return (
+    <div className="bento-card px-6 py-4 mb-6 rounded-full">
+      <h2 className="text-3xl font-bold text-gradient">{text}</h2>
+    </div>
+  );
 };
 
 export default Title;
