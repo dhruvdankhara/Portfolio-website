@@ -1,6 +1,6 @@
 import Title from "./Title";
 import ProjectCard from "@/components/ProjectCard";
-import budgetLink from "@/assets/budgetlink.png";
+import walletLink from "@/assets/walletlink.png";
 import devSpace from "@/assets/blogsphere.png";
 
 interface ProjectProps {
@@ -31,7 +31,7 @@ const Projects = () => {
         "JWT",
         "Nodemailer",
       ],
-      image: budgetLink,
+      image: walletLink,
       liveLink: "https://walletlink-dhruv.vercel.app/",
       githubLink: "https://github.com/dhruvdankhara/walletlink",
     },
