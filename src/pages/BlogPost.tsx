@@ -48,7 +48,7 @@ const BlogPost = () => {
 
   if (loading) {
     return (
-      <main className="flex-grow pb-16">
+      <main className="flex-grow max-w-5xl mx-auto pb-16">
         <div className="container mx-auto px-6">
           <div className="animate-pulse">
             <div className="h-6 bg-bento-hover rounded-md w-48 mb-6"></div>
@@ -97,7 +97,7 @@ const BlogPost = () => {
 
   if (error) {
     return (
-      <main className="flex-grow pb-16">
+      <main className="flex-grow pb-16 max-w-5xl mx-auto">
         <div className="container mx-auto px-6 text-center">
           <p className="text-red-500">Error: {error}</p>
           <Link
@@ -114,7 +114,7 @@ const BlogPost = () => {
 
   if (!blogData) {
     return (
-      <main className="flex-grow pb-16">
+      <main className="flex-grow pb-16 max-w-5xl mx-auto">
         <div className="container mx-auto px-6 text-center">
           <p>Blog post not found.</p>
           <Link
@@ -130,7 +130,7 @@ const BlogPost = () => {
   }
 
   return (
-    <main className="flex-grow  pb-16">
+    <main className="flex-grow  pb-16 max-w-5xl mx-auto">
       <div className="container mx-auto px-6">
         <Link
           to="/blogs"

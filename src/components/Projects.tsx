@@ -15,11 +15,12 @@ interface ProjectProps {
 const Projects = () => {
   const projects: ProjectProps[] = [
     {
-      title: "BudgetLink – Expense Management with Role-Based Access  ",
+      title: "Wallet Link – Family Expense Tracker Web App",
       description:
-        "Built an expense tracker web app with role-based access for managing family budgets. Used Recharts for interactive visual data representation of expenses. ",
+        "Built an expense tracker web app with role-based access for managing family budgets. Implemented features like creating private wallets, tracking expenses and tracking current balance.",
       techStack: [
         "React",
+        "TypeScript",
         "Node.js",
         "Express.js",
         "MongoDB",
@@ -28,13 +29,14 @@ const Projects = () => {
         "Redux",
         "Rechart",
         "JWT",
+        "Nodemailer",
       ],
       image: budgetLink,
-      liveLink: "https://budget-link.vercel.app",
-      githubLink: "https://github.com/dhruvdankhara/budgetlink",
+      liveLink: "https://walletlink-dhruv.vercel.app/",
+      githubLink: "https://github.com/dhruvdankhara/walletlink",
     },
     {
-      title: "DevSpace – Social Blogging Website for Developers",
+      title: "Blog Sphere – Social Blogging Website ",
       description:
         "Developed a blogging platform with features like post creation, comment, like and follow other users. Implemented secure authentication and authorization with JWT.",
       techStack: [
