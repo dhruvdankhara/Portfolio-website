@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-black;
+  }
+
+  body {
+    @apply bg-pop-bg text-black antialiased font-sans;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  /* Pop Brutalism Card - Square borders like Gumroad */
+  .pop-card {
+    @apply bg-white border-2 border-black p-6 transition-all duration-200;
+  }
+
+  .pop-card:hover {
+    @apply shadow-pop -translate-y-0.5;
+  }
+
+  /* Pop Brutalism Button - Primary */
+  .pop-btn {
+    @apply border-2 border-black font-bold px-6 py-3 transition-all duration-200;
+  }
+
+  .pop-btn-primary {
+    @apply pop-btn bg-black text-white;
+  }
+
+  .pop-btn-primary:hover {
+    @apply -translate-y-0.5 -translate-x-0.5 shadow-pop-gray;
+  }
+
+  .pop-btn-primary:active {
+    @apply translate-y-0.5 shadow-none;
+  }
+
+  /* Pop Brutalism Button - Secondary */
+  .pop-btn-secondary {
+    @apply pop-btn bg-white text-black;
+  }
+
+  .pop-btn-secondary:hover {
+    @apply bg-pop-pink -translate-y-0.5 -translate-x-0.5 shadow-pop;
+  }
+
+  .pop-btn-secondary:active {
+    @apply translate-y-0.5 shadow-none;
+  }
+
+  /* Pop Brutalism Button - Accent */
+  .pop-btn-accent {
+    @apply pop-btn bg-pop-teal text-white;
+  }
+
+  .pop-btn-accent:hover {
+    @apply -translate-y-0.5 -translate-x-0.5 shadow-pop;
+  }
+
+  /* Pop Brutalism Badge - Square */
+  .pop-badge {
+    @apply border-2 border-black shadow-pop-sm px-3 py-1 text-xs font-bold;
+  }
+
+  /* Pop Brutalism Input */
+  .pop-input {
+    @apply bg-white border-2 border-black py-3 px-4 transition-all duration-200;
+  }
+
+  .pop-input:focus {
+    @apply shadow-pop outline-none;
+  }
+
+  /* Pop Brutalism Heading */
+  .pop-heading {
+    @apply font-black tracking-tight text-black;
+  }
+
+  /* Loading skeleton */
+  .skeleton {
+    @apply bg-gray-200 animate-pulse;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
