@@ -20,7 +20,7 @@ const Navbar = () => {
           href="/"
           className="text-xl font-black tracking-tight text-black hover:text-pop-pink transition-colors px-6 py-4 border-r-2 border-black"
         >
-          DHRUV.dev
+          DHRUV
         </Link>
 
         {/* Nav links */}

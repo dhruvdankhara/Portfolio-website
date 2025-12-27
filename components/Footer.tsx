@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Logo section */}
         <div className="bg-black text-white p-6 md:p-8 border-b-2 md:border-b-0 md:border-r-2 border-black">
           <Link href="/" className="text-2xl font-black tracking-tight">
-            DHRUV.dev
+            DHRUV
           </Link>
           <p className="text-white/60 text-sm mt-2 font-medium">
             Building the web, one component at a time.
