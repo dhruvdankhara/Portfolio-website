@@ -7,15 +7,19 @@ export async function GET() {
   const blogs = await getBlogs();
 
   const urls = blogs
-    .map(
-      (blog) => `
+    .map((blog) => {
+      let date = new Date(blog.date);
+      if (isNaN(date.getTime())) {
+        date = new Date();
+      }
+      return `
     <url>
       <loc>${baseUrl}/blogs/${blog.slug}</loc>
-      <lastmod>${new Date(blog.updatedAt).toISOString()}</lastmod>
+      <lastmod>${date.toISOString()}</lastmod>
       <priority>0.8</priority>
     </url>
-  `,
-    )
+  `;
+    })
     .join("");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
