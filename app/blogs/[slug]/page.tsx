@@ -28,6 +28,10 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   return {
     title: `${blog.title} | Dhruv Dankhara`,
     description: blog.excerpt,
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 

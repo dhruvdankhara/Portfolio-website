@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: "Dhruv Dankhara | MERN Stack Developer",
   description:
     "Personal portfolio, skills showcase, and blog built with Next.js, Tailwind CSS, and MongoDB.",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

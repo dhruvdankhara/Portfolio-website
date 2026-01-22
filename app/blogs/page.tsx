@@ -3,6 +3,13 @@ export const revalidate = 0;
 import BlogCard from "@/components/BlogCard";
 import { getBlogs } from "@/lib/blogs";
 import { BookOpen, Rss, TrendingUp } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blogs | Dhruv Dankhara",
+  description:
+    "Read my latest thoughts, tutorials, and insights about web development, React, Next.js, and more.",
+};
 
 const BlogsPage = async () => {
   const blogs = await getBlogs();
